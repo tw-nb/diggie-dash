@@ -36,6 +36,17 @@ h2 {
 }
 
 
+/* Link settings */ 
+a {
+  color: #95271D;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+
+
+
 
 /* Table Settings */ 
 table {
@@ -225,7 +236,7 @@ table {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-color: #95271D;
-    height: 350px;
+    height: 400px;
     border-radius: 15px;
     margin-top: 10px;
 }
@@ -233,7 +244,7 @@ table {
 .plan-table {
     background-color: #95271D;
     border-radius: 15px;
-    height: 350px;
+    height: 500px;
 }
 
 .plan-header {
@@ -245,3 +256,34 @@ table {
     font-weight: bold;
 }
 /* THE PLAN END */
+
+/* Cash & Investments starts */
+
+.cash-investments-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.account-balances-container {
+    background-color: #95271D;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.account-name {
+    background-color: #95271D;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    border-radius: 15px;
+}
+
+.investment-accounts-container {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-color: #95271D;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
