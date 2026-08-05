@@ -69,6 +69,7 @@ table {
 .menu-container {
     background-color: #E77B49;
     height: 100vh;
+    text-align: center;
 }    
 
 /* HOME PAGE START */
@@ -261,10 +262,11 @@ table {
 
 .cash-investments-container {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1.2fr 2fr;
 }
 
 .account-balances-container {
+    display: grid;
     background-color: #95271D;
     height: 700px;
     border-radius: 15px;
@@ -275,15 +277,98 @@ table {
 .account-name {
     background-color: #95271D;
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
     border-radius: 15px;
 }
 
 .investment-accounts-container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
     background-color: #95271D;
     height: 700px;
     border-radius: 15px;
     margin-top: 10px;
+}
+/* Cash & Investments ends*/
+
+
+/* Assets & Liabilities start */
+
+.assets-liabilities-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.assets-container {
+    display: grid;
+    background-color: #95271D;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.liabilities-container {
+    display: grid;
+    background-color: #95271D;
+    height: 700px;
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.fixed-assets {
+    background-color: #95271D;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.financial-assets {
+    background-color: #95271D;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.intangible-assets {
+    background-color: #95271D;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.secured-liabilities {
+    background-color: #95271D;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.unsecured-liabilities {
+    background-color: #95271D;
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+/* Assets & Liabilities end */
+
+
+/* Expenses start */
+
+.expense-report-container {
+    display: grid;
+    grid-template-rows: 1fr 3.5fr
+    
+}
+
+.expense-report {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    background-color: #60241E;
+    border-radius: 15px;
+    justify-content: center;
+}
+
+.expense {
+    margin-bottom: -20px;
+    border-radius: 15px;
+}
+
+.pie-chart {
 }

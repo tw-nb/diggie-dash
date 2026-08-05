@@ -4,6 +4,10 @@
     
     <title>Digital Dashboard</title>
     <link rel="stylesheet" href="style.css">
+
+    <!-- Charts -->
+
+
   </head>
 
 
@@ -25,6 +29,145 @@
         <h3><a href="savings-tracker.html">Savings Tracker</a></h3>
         <h3><a href="nailah-accounts.html">Nailah's Accounts</a></h3>
       </div>
+
+      <div class="expense-report-container">
+        <!--Start of Date-->
+        <div class="date-container">
+
+          <div class="months-container">
+            <div class="month">Jan</div>
+            <div class="month">Feb</div>
+            <div class="month">Mar</div>
+            <div class="month">Apr</div>
+            <div class="month">May</div>
+            <div class="month">Jun</div>
+            <div class="month">Jul</div>
+            <div class="month">Aug</div>
+            <div class="month">Sep</div>
+            <div class="month">Oct</div>
+            <div class="month">Nov</div>
+            <div class="month">Dec</div>
+          </div>
+
+          <div class="days-container">
+            <div class="day">1</div>
+            <div class="day">2</div>
+            <div class="day">3</div>
+            <div class="day">4</div>
+            <div class="day">5</div>
+            <div class="day">6</div>
+            <div class="day">7</div>
+            <div class="day">8</div>
+            <div class="day">9</div>
+            <div class="day">10</div>
+            <div class="day">11</div>
+            <div class="day">12</div>
+            <div class="day">13</div>
+            <div class="day">14</div>
+            <div class="day">15</div>
+            <div class="day">16</div>
+            <div class="day">17</div>
+            <div class="day">18</div>
+            <div class="day">19</div>
+            <div class="day">20</div>
+            <div class="day">21</div>
+            <div class="day">22</div>
+            <div class="day">23</div>
+            <div class="day">24</div>
+            <div class="day">25</div>
+            <div class="day">26</div>
+            <div class="day">27</div>
+            <div class="day">28</div>
+            <div class="day">29</div>
+            <div class="day">30</div>
+            <div class="day">31</div>
+          </div>     
+          
+        </div>
+        <!--End of Date-->
+
+        <!--Start of Expense Report-->
+        <div class="expense-report">
+          <!--Start of Expense Table-->
+          <div class="expense">
+            <table>
+              <tr>
+                <th>Category</th>
+                <th>Expense</th>
+                <th>Budgeted Cost</th>
+                <th>Actual Cost</th>
+                <th>Due Date</th>
+              </tr>
+              <tr>
+                <th>Car</th>
+                <th>Car Note</th>
+                <td>$200</td>
+                <td>$180</td>
+                <td>15th</td>
+              </tr>
+              <tr>
+                <th>Living Expenses</th>
+                <th>Rent</th>
+                <td>$1,000</td>
+                <td>$950</td>
+                <td>1st</td>
+              </tr>
+              <tr>
+                <th>Debt</th>
+                <th>Credit Card</th>
+                <td>$500</td>
+                <td>$450</td>
+                <td>10th</td>
+              </tr>
+              <tr>
+                <th>Groceries</th>
+                <th> Groceries</th>
+                <td>$300</td>
+                <td>$280</td>
+                <td>5th</td>
+              </tr>
+              <tr>
+                <th>Living Expenses</th>
+                <th>Utilities</th>
+                <td>$150</td>
+                <td>$140</td>
+                <td>20th</td>
+              </tr>
+              <tr>
+                <th>Car</th>
+                <th>Car Insurance</th>
+                <td>$100</td>
+                <td>$90</td>
+                <td>25th</td>
+              </tr>
+            </table>
+          </div>
+            <!--plotly javascript pie chart-->
+            <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+              <body>
+
+              <div id="myPlot" style="width:100%;max-width:700px"></div>
+
+              <script>
+              const xArray = ["Debt", "Groceries", "Living Expenses", "Dining Out", "Car"];
+              const yArray = [55, 49, 44, 24, 15];
+              
+              const layout = {
+                title:"Category Breakdown", 
+                font:{color:"black"},
+                height: 400, 
+                width: 400, 
+                // both bgcolor calls are needed to change plotly background color
+                paper_bgcolor:"#60241E",  
+                plot_bgcolor:"#60241E",};
+
+              const data = [{labels:xArray, values:yArray, type:"pie"}];
+
+              Plotly.newPlot("myPlot", data, layout);
+            </script>
+<!--End of expense report -->
+      </div>   
+<!--End of expense report container -->
     </div>
-</body>
+  </body>
 </html>
